@@ -1,0 +1,27 @@
+* {
+  margin: 0px; /* Elementler arası DIŞ kısımda ki boşlukları ayarlayan özelliktir.Buna CSS  RESETLEME denir.Elde etmek istediğimiz görünümü daha rahat elde etmek için bazı değerler sıfırlanır. */
+  padding: 0px; 
+  box-sizing: border-box;     /*-- Bu ise DIŞSAL BOYUTLANDIRMA YAPMAYA YARAR. ESNEK DEĞİL KATIDIR. Kutu içinde padding ne kadar büyürse büyüsün genişlik sabit kalır ARTMAZ AZALMAZ*/
+}
+
+
+h1 {
+  padding: 15px;
+  border: 3px solid red;
+}
+p {
+  padding: 20px; /* padding elementin İÇ kısımda ki mesafeyi/boşluğu ayarlayan özellik */
+  padding-top: 15px;
+  padding-bottom: 20px;
+  margin: 20px 40px 30px 40px; /* top - right- bottom- left sıralaması tek şekilde böyle de yazılabilir*/
+  border: 25px solid red;
+  border-radius: 50ch; /* Dış çizgi köşelerini oval yapıyor. */
+  overflow-x: scroll; /* X ekseninde kaydırma yapmaya yarıyor. Scroll kelimesi anahtar. */
+  font-size: 5rem; }
+  
+
+/*body{
+
+  overflow: hidden; /~ Kaymayı önlüyor ~/
+  width: min-content; /~ veya max content alabileceği max. content uzunluğunu alsın demek, min ise min(iÇSEL BOYUTLANDIRMA-Esneklik istiyorsak tercih)  ~/
+}*/

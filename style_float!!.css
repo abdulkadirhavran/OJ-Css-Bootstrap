@@ -1,0 +1,33 @@
+.main-img {
+  float: left;  /* float özelliği ilgili elementi(Burada img) sayfada sağa veya sola yaslamayı sağlıyor Çok tercih edilmiyor */
+  margin-right: 15px;
+}
+
+.box {
+  background-attachment: fixed;
+  background-color: rgb(43, 226, 174);
+  border: 2px solid rgba(255, 215, 0, 0.85);
+  width: 75px;
+  height: 75px;
+  padding: 50px;
+  text-align: center;
+  float: left; /* Kutular yan yana gelir ve belirtilen yaslanır. */
+}
+.box.box-4 {
+  float: right;
+}
+hr {
+  margin: 50px;
+}
+.section2 p {
+  clear: left; /* Belirtilen yönü komple temizler. Floatlı birşey bırakmaz.  */
+  /* clear: both;    Her iki tarafı da temizler.*/
+}
+
+.paragraf{
+  float: left;
+  clear: both;
+
+
+
+}
