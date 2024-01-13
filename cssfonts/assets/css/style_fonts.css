@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Roboto";
   font-weight: 400;
-  src: local("Roboto Regular"),
-    url("../fonts/roboto/roboto-regular-webfont.woff2") format("woff2"),
-    url("../fonts/Roboto/roboto-regular-webfont.woff") format("woff");
+  src: local('Roboto Regular'), /* Local eğer font kendi bilgisayarımızda yüklü/mevcut ise bu kısımdan sistemde kullanılabilir.  */
+    url("../fonts/roboto/roboto-regular-webfont.woff2") format("woff2"),  /* Bu kısım SIRALI ŞEKİLDE gider. Önce local'de fontu arar sonra woff2 yoksa woff şeklinde sıralanır. */
+    url("../fonts/Roboto/roboto-regular-webfont.woff") format("woff");   /* Bu kısımda font-wight'i 400 olan normal Roboto fontu tanımlanıyor */
 }
 
 @font-face {
@@ -18,7 +18,7 @@
   font-family: "Roboto";
   font-weight: 400;
   font-style: italic;
-  src: local("Roboto Italic"),
+  src: local("Roboto Italic"), /* 1.sırada  */
     url("../fonts/Roboto/roboto-italic-webfont.woff2") format("woff2"),
     url("../fonts/Roboto/roboto-italic-webfont.woff") format("woff");
 }
@@ -34,7 +34,7 @@
 
 
 .font-roboto {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif; /* İlk olarak font-family roboto yoksa sans-serif family olacak(Tarayacının default font'u) */
 }
 
 .text-bold {
