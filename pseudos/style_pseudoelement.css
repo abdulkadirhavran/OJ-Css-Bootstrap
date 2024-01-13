@@ -1,3 +1,7 @@
+/* BEFORE -AFTER'da Content: "?" olmak zorunda   */
+/*  PSEUDO CLASSLAR : BELİRTTİĞİMİZ DURUMLARDA ELEMENTİ DEĞİŞTİRİYOR.
+         PSEUDO ELEMENTLER : YENİ ELEMENT EKLEMİŞ GiBİ DAVRANIR  */
+
 p::first-letter {
 
     font-size: 2rem;
@@ -54,5 +58,12 @@ p::first-line {
 .required::after {
 
     content: "*";
+
+}
+
+p::selection{  /* Paragrafı mouse ile seçtiğimiz zaman arka plan rengini değiştirmeyi sağlıyor. */
+    background-color: chartreuse;
+    color: white;
+
 
 }

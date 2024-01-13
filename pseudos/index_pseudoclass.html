@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- PSEUDO CLASSLAR : BELİRTTİĞİMİZ DURUMLARDA ELEMENTİ DEĞİŞTİRİYOR.
+         PSEUDO ELEMENTLER : YENİ ELEMENT EKLEMİŞ GiBİ DAVRANIR -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classes</title>
+    <style>
+        a:link {
+
+            color: cadetblue !important;
+            
+        }
+
+        a:visited {
+
+            color: red;
+
+        }
+        a:hover {
+
+            color:crimson;
+
+
+        }
+        button {
+
+            background-color: aqua;
+
+        }
+        
+        button:hover {
+
+           background-color: blue; 
+
+
+        }
+        button:active{
+            background-color: brown;
+        }
+        a:active {
+            color: violet;
+        }
+
+        ul li:nth-child(5) { /* listede ki 5.maddeye uygula (maddelerin her biri child olarak görülür.) */
+            background-color: chocolate;
+        }
+
+        ul li:nth-child(3n) { /* listede ki 3 ve 3'ün katları işaretlenir.) */
+            background-color: chocolate;
+        }
+
+        ul li:nth-child(even) { /* listede ki çift sayılı elemanlar seçilir.) */
+            background-color: chocolate;
+        }
+
+        ul li:nth-child(odd) { /* listede ki tek sayılı elemanlar seçili olur.) */
+            background-color: rgb(139, 97, 67);
+        }
+
+        ul {
+
+            font-size: 25px;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo Class'ları</h1>
+    <br />
+    <br />
+    <a href="https://us.puma.com/us" target="_blank">Puma</a>
+    <a href="http://youtube.com" target="_blank">Youtube.com</a> <br /> <br />
+    <a href="http://google.com.tr" target="_blank">Google.com.tr</a>
+    <br />
+    <br />
+    <button>Buraya Tıkla</button>
+    <br />
+    <br />
+    <ul>
+        <li>Liste elemanı-1</li>
+        <li>Liste elemanı-2</li>
+        <li>Liste elemanı-3</li>
+        <li>Liste elemanı-4</li>
+        <li>Liste elemanı-5</li>
+        <li>Liste elemanı-6</li>
+        <li>Liste elemanı-7</li>
+        <li>Liste elemanı-8</li>
+        <li>Liste elemanı-9</li>
+        <li>Liste elemanı-10</li>
+    </ul>
+</body>
+</html>
