@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: local("Roboto Regular"),
+    url("../fonts/roboto/roboto-regular-webfont.woff2") format("woff2"),
+    url("../fonts/Roboto/roboto-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: local("Roboto Bold"),
+    url("../fonts/Roboto/roboto-bold-webfont.woff2") format("woff2"),
+    url("../fonts/Roboto/roboto-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: italic;
+  src: local("Roboto Italic"),
+    url("../fonts/Roboto/roboto-italic-webfont.woff2") format("woff2"),
+    url("../fonts/Roboto/roboto-italic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: italic;
+  src: local("Roboto Bold-Italic"),
+    url("../fonts/Roboto/roboto-bolditalic-webfont.woff2") format("woff2"),
+    url("../fonts/Roboto/roboto-bolditalic-webfont.woff") format("woff");
+}
+
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-italic {
+  font-style: italic;
+}
+hr {
+  border: 5px double red;
+}
