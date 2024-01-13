@@ -1,0 +1,58 @@
+p::first-letter {
+
+    font-size: 2rem;
+    color: red;
+
+
+}
+
+p::first-line {
+
+    color: brown;
+    font-size: 24px;
+
+}
+
+#webtech li::marker {
+
+    content: "asd  ";
+    list-style-type: square;
+    color: chocolate;
+    
+}
+
+#webtech li::before {
+
+    content: "a : ";  /* before özelliğini kullanabilmek için mutlaka CONTENT özelliği olmalı aksi taktirde çalışmaz */
+    display: inline-block;
+    width: 20px;
+    height: auto;
+    background-color: blueviolet;
+
+
+}
+
+#webtech li::after {
+
+    content: "b";  /* after özelliğini kullanabilmek için mutlaka CONTENT özelliği olmalı aksi taktirde çalışmaz */
+    display: inline-block;
+    width: 20px;
+    height: auto;
+    background-color: rgb(223, 23, 63);
+
+
+}
+
+
+.container {
+
+    margin-inline-start: 20px;
+
+
+}
+
+.required::after {
+
+    content: "*";
+
+}
