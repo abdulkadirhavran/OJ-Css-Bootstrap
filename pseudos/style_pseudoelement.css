@@ -1,8 +1,8 @@
-/* BEFORE -AFTER'da Content: "?" olmak zorunda   */
+/* BEFORE -AFTER ve MARKER'da Content: "..." olmak zorunda   */
 /*  PSEUDO CLASSLAR : BELİRTTİĞİMİZ DURUMLARDA ELEMENTİ DEĞİŞTİRİYOR.
          PSEUDO ELEMENTLER : YENİ ELEMENT EKLEMİŞ GiBİ DAVRANIR  */
 
-p::first-letter {
+p::first-letter { /* paragrafta İlk harf değişimi */
 
     font-size: 2rem;
     color: red;
@@ -10,7 +10,7 @@ p::first-letter {
 
 }
 
-p::first-line {
+p::first-line { /* İlk satırda oluşan değişimler */
 
     color: brown;
     font-size: 24px;
@@ -19,7 +19,7 @@ p::first-line {
 
 #webtech li::marker {
 
-    content: "asd  ";
+    content: "😩  ";
     list-style-type: square;
     color: chocolate;
     
@@ -38,7 +38,7 @@ p::first-line {
 
 #webtech li::after {
 
-    content: "b";  /* after özelliğini kullanabilmek için mutlaka CONTENT özelliği olmalı aksi taktirde çalışmaz */
+    content: "b";  /* after özelliğini kullanabilmek için mutlaka CONTENT özelliği olmalı(Dolu-Boş) aksi taktirde çalışmaz */
     display: inline-block;
     width: 20px;
     height: auto;
@@ -55,13 +55,14 @@ p::first-line {
 
 }
 
-.required::after {
+.required::after { 
 
     content: "*";
 
 }
 
 p::selection{  /* Paragrafı mouse ile seçtiğimiz zaman arka plan rengini değiştirmeyi sağlıyor. */
+    
     background-color: chartreuse;
     color: white;
 

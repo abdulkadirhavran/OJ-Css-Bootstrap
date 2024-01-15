@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pseudo Classes</title>
     <style>
-        a:link {
+        a:link { /* Daha önce ziyaret EDİLMEMİŞ bağlantıların özellikleri bunlar. */
 
             color: cadetblue !important;
             
         }
 
-        a:visited {
+        a:visited {  /* Daha önce ziyaret edilen bağlantılarda oluşan değişiklikler. */
 
             color: red;
 
         }
         a:hover {
 
-            color:crimson;
+            color:purple;
 
 
         }
@@ -30,18 +30,29 @@
 
         }
         
-        button:hover {
+        button:hover {  /* Mouse ile üstüne gelindiğinde oluşan değişimler. */
 
            background-color: blue; 
 
 
         }
-        button:active{
+        button:active{  /* Aktif tıklanma esnasında oluşan değişiklikler. */
             background-color: brown;
         }
         a:active {
             color: violet;
         }
+
+        ul li:first-child {
+
+            color: bisque;            
+        }
+
+        ul li:last-child {
+
+            color: aquamarine;
+        }
+        
 
         ul li:nth-child(5) { /* listede ki 5.maddeye uygula (maddelerin her biri child olarak görülür.) */
             background-color: chocolate;
