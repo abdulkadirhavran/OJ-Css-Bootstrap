@@ -7,10 +7,10 @@
     width: 100%;
   }
   
-  .top-navbar > .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .top-navbar > .container {  /* Top navbar hemen altında ki container */
+    display: flex;   /* ızgara görünümü elde etmek istedğimizde flex veriyoruz. */
+    align-items: center;  /* Y ekseninde-düşey eksen hizalamaya yarar. */
+    justify-content: space-between; /* X ekseninde-Yatay eksende hizalamaya yarar. */
   }
   
   .top-navbar ul {
@@ -29,7 +29,7 @@
   
   .top-navbar ul li a {
     display: inline-block;
-    text-decoration: none;
+    text-decoration: none; /* Altı çizili olmayı sıfırlar dekorasyon kalkar ortadan */
     color: #333;
   }
   
@@ -47,7 +47,7 @@
   /* Media-querry ile css'de responsive yapılabilir. */
   
   @media (min-width: 576px) { /* 576 px üzerinde burada yazan geçerli olacak kurallar normal css kuralları gibi altına yazılır. */
-    .container {              /*   */
+    .container {             
       max-width: 576px;
     }
   }
@@ -82,7 +82,7 @@
     }
   }
   
-  @media (min-width: 1400px) {
+  @media (min-width: 1400px) and (max-width: 1650px) { /*Min max ayrı ayrı da belirtilebilir ve o aralığı kapsar,  ama MİN'lere göre ayarlamak daha temiz  */
     .container {
       max-width: 1400px;
     }
