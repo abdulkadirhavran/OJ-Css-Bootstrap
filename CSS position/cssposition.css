@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-dark: #454749;
+  --color-light: #f3f5f9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  word-spacing: 1.4px;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+section {
+  height: 100vh;
+  display: flex; /* Display flex olmadan justify content ve align-İtems özelliği çalışmaz */
+  justify-content: center;
+  align-items: center;
+}
+
+.item-container {
+  display: grid;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(4, 150px);
+  grid-gap: 1em;
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: var(--color-light);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.item-1 {
+  background-color: #f44336;
+}
+
+.item-2 {
+  background-color: #e91e63;
+}
+
+.item-3 {
+  background-color: #9c27b0;
+}
+
+.item-4 {
+  background-color: #673ab7;
+}
+
+.item-5 {
+  background-color: #3f51b5;
+}
+
+.item-6 {
+  background-color: #2196f3;
+}
+
+.item-7 {
+  background-color: #03a9f4;
+}
+
+.item-8 {
+  background-color: #00bcd4;
+}
+
+.item-9 {
+  background-color: #009688;
+}
+
+.item-10 {
+  background-color: #4caf50;
+}
+
+.item-11 {
+  background-color: #8bc34a;
+}
+
+.item-12 {
+  background-color: #cddc39;
+}

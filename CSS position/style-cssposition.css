@@ -1,0 +1,45 @@
+body {
+    overflow-x: hidden; /* overflow yatay eksende scroll bar oluşumunu sağlar. */
+} 
+
+.item-1 {  /* Burda itemin ekran çıkması eksi(-) değerlerle sağlanır. */
+
+    position: absolute; /* Elementi istediğimiz şekilde olduğu yerden KOPARARAK hizalamamızı sağlar,ancak absolute en yakın atasına(position:relative olan üst class) göre konumlanır.Eğer atası yoksa(relative içeren bir üst class) direkt web sayfasını(BODY) baz alır. */
+    top: -20px; /* Top veya bottom verdikten sonra diğer ayarlama yapılmaz çünkü top bottom zıttır mantıksız olur. Right left için de geçerli */
+    left: -140px;
+    z-index: -2;/* 3.eksen bu şekilde ayarlanır(Derinlik-3.boyut) numaralandırılarak büyük sayıya sahip olan üstte görülür.  */
+}
+
+.item-5 {
+
+    position: static; /* static pozisyonda hiç birşey olmaz default değerdir.yazılmasa da olur. */
+    top: 50px;
+    left:50px;
+
+}
+
+.item-container {
+
+    position: relative; /* Göreceli demektir. Alt classlarda pozisyonu absolute olan elementi tutan pozisyon tipidir.Aynı zamanda Elementi kendi konumuna göre hizalama yapar. Kapsayıcı elementin dışına dahi çıkabilir. */
+
+
+
+}
+
+.item-6 {
+
+    position: fixed; /* seçili elementin sayfa boyu aşağı yukarı kaymasını sağlar. */
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 10%;
+
+}
+
+
+
+.item-4 {
+    position: sticky; /* Yapışkan manasına gelir. Fixed gibi davranır ancak kapsayıcı elementi sınırı içinde hareket eder.  */
+    top: 70px;
+}
