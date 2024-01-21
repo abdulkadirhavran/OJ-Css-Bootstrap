@@ -1,0 +1,47 @@
+.box {
+    display: flex;   /*  */
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    padding: 40px 40px;
+    border: 2px solid red;
+    background-color: aquamarine;
+    color: blue;
+
+}
+
+/* Scss'de İç içe özellikler yazılır.Html kodları gibi iç içe yazılarak inherit edilir. "&" demek bir üst parent'ı demek  */
+header  {   
+    .btn {  
+        display: inline-block;
+        padding: 10px;
+        color: aliceblue;
+        border: 3px solid black;
+        border-radius: 10px;
+        margin: 50px;
+        background-color: gray;
+        /* NESTİNG Özelliği  */
+        &:hover {
+            background-color: rgba(111, 72, 238, 0.692);
+        }
+        &:active {
+            background-color: blueviolet;
+    
+        }
+
+        &.warning { /* İçinde olduğu sınıf ve elementleri kapsayacak şekilde devam eder.(Header içinde ki btn sınıfı olan aynı zamanda warning sınıfını bulunduran elementi işaret eder) */
+
+            background-color: yellowgreen;
+            
+            &:hover {
+
+                background-color: burlywood;
+            }
+        }
+        
+    }
+
+}
+
