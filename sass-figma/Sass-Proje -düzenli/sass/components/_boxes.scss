@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+.box-1 {
+  @include square(300px, $color-primary);
+}
+
+.box-2 {
+  @include square(500px, $color-secondary);
+}

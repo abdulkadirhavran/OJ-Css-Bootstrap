@@ -1,0 +1,50 @@
+$color-primary: #A2D2FF;
+$color-secondary: #FFAFCC;
+$spacing: 10px;
+$border-width: 2px;
+$border-radius: 8px;
+
+@mixin square($size, $color: #ff00ff, $border-width: 5px) {
+    width: $size;
+    height: $size;
+    background-color: $color;
+    border: $border-width solid green;
+}
+
+.box-1 {
+    @include square(300px, $color-secondary);
+}
+
+.box-2 {
+    @include square(300px, $color-secondary);
+}
+ 
+.alert {  /* Alert ortak özellikler bu özellikler extend ile diğer class'lara da geçerli olabiliyor.  */
+    font-size: 1.5rem;
+    border: $border-width solid #000;
+    padding: 15px;
+    border-radius: $border-radius;
+}
+
+.alert-success {
+    @extend .alert;
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-warning {
+    @extend .alert;
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.alert-primary {
+    @extend .alert;
+    background-color: $color-primary;
+    color: $color-secondary;
+}
+.alert-primary {
+    @extend .alert;
+
+
+}

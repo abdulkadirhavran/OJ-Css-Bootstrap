@@ -8,7 +8,7 @@
   }
   
   .top-navbar > .container {  /* Top navbar hemen altında ki container */
-    display: flex;   /* ızgara görünümü elde etmek istedğimizde flex veriyoruz. */
+    display: flex;   /* ızgara görünümü elde etmek istediğimizde flex veriyoruz. */
     align-items: center;  /* Y ekseninde-düşey eksen hizalamaya yarar. */
     justify-content: space-between; /* X ekseninde-Yatay eksende hizalamaya yarar. */
   }

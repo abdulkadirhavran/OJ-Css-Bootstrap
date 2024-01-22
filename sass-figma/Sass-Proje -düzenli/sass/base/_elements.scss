@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+a {
+  color: $color-primary;
+}
+
+button {
+  background-color: $color-primary;
+}

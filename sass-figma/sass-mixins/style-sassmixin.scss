@@ -1,0 +1,25 @@
+$color-primary: #A2D2FF;
+$color-secondary: #FFAFCC;
+$spacing: 10px;
+$border-width: 2px;
+$border-radius: 8px;
+
+
+@mixin square($size, $color: #ff00ff, $border-width: 5px) { /* Burada parantez içine parametre isimleri verilerek bu özellikler kullanılacağı yerde istenebilir.Veya default olarak yazılarak mixin'de tanımlanabilir. */
+    width: $size;
+    height: $size;
+    background-color: $color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: $border-width solid green;
+}
+
+.box-1 {
+    @include square(200px, $color-primary, 20px);
+    font-size: 40px;
+}
+
+.box-2 {
+    @include square(300px, $color-secondary);
+}

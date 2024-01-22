@@ -1,0 +1,27 @@
+@use '../abstracts' as *;  /* .. demek üst klasöre çık oradan ilgili klasöre giderek özellikleri kullan demek * ise değişkenler önüne adres vermemek için getirilir.kısaltmadır. */
+
+.alert {
+    font-size: 1.5rem;
+    border: $border-width solid #000;
+    padding: 15px;
+    border-radius: $border-radius;
+  }
+  
+  .alert-success {
+    @extend .alert;
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .alert-warning {
+    @extend .alert;
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .alert-primary {
+    @extend .alert;
+    background-color: $color-primary;
+    color: $color-secondary;
+  }
+  

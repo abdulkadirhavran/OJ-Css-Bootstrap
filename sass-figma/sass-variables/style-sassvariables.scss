@@ -1,0 +1,44 @@
+/* Değişkenler başında dolar"$" işareti ile başlayarak tanımlanır. Değişkene bir özellik verilerek isteğimiz yerde değişken kullanılarak o özelliği kullanmış oluruz. */
+$color-primary: #219EBC;
+$color-secondary:  #FFB703;
+$color-orange: #FB8500;
+$color-darkness: #023047; 
+$spacing: 10px;
+
+section {
+
+    padding: 20px;
+    
+    
+    & a {
+
+        margin-right: 20px;
+    }
+    
+
+}
+
+a {
+
+    color: $color-orange;
+    
+    &:hover{
+
+        color: $color-primary;
+
+    }
+
+}
+
+button {
+
+    background-color: $color-primary;
+    color: #FFB703;
+
+}
+p{
+
+   
+    margin-top: $spacing*6;
+
+}

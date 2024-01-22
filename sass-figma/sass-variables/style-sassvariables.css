@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* Değişkenler başında dolar"$" işareti ile başlayarak tanımlanır. Değişkene bir özellik verilerek isteğimiz yerde değişken kullanılarak o özelliği kullanmış oluruz. */
+section {
+  padding: 20px;
+}
+section a {
+  margin-right: 20px;
+}
+
+a {
+  color: #FB8500;
+}
+a:hover {
+  color: #219EBC;
+}
+
+button {
+  background-color: #219EBC;
+  color: #FFB703;
+}
+
+p {
+  margin-top: 60px;
+}/*# sourceMappingURL=style-sassvariables.css.map */
