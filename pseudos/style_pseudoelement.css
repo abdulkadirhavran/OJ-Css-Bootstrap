@@ -19,7 +19,7 @@ p::first-line { /* İlk satırda oluşan değişimler */
 
 #webtech li::marker {
 
-    content: "😩  ";
+    content: "😩";
     list-style-type: square;
     color: chocolate;
     
