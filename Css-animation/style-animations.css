@@ -1,0 +1,85 @@
+@keyframes slideToright { /* Animasyon için keyframes anahtar kelimesine ihtiyaç var sonra animasyon adı gelir. */
+
+    0%  { /* From */                        /* Nereden ve hangi boyutta transform başlaycak */
+
+        transform: translateX(30px);
+        background-color: rgb(144, 154, 122);
+    }
+    50% {
+
+        transform: rotate(60deg);
+        background-color: bisque;
+
+
+    }
+    75% {
+
+        transform: translateX(-200px);
+        scale: 0.5;
+
+    }
+    100%  { /* to */                               /* Nerede bitecek  */
+
+        transform: translateX(350px);
+        background-color: rgb(46, 99, 159);
+        scale: 1.2;
+    }
+
+
+
+}
+
+
+.box-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 15rem;
+    margin-left: 25px;
+    background-color: rgba(49, 205, 205, 0.5);
+    animation-name: slideToright;  /*  Animasyon adı*/
+    animation-duration: 4s;  /* Animasyon süresi */
+    animation-timing-function: ease-in-out; /* Bazı hareketlerin zamanlamasını sağlar.Yavaş hızlı yavaş,yavaş hızlı gibi  */
+    animation-delay: 1s; /* animasyon gecikme süresi */
+    animation-direction: normal;  /* animasyonun gideceği yön normal-reverse */
+    animation-fill-mode: forwards;  /* Animasyonun son noktasında durmasını sağlar */
+    animation-iteration-count: infinite; /* animasyon Tekrar sayısı  */
+
+    /* Animasyon şu şekilde de yazılabilr;
+    
+        animation: slideToright 2s ease-in 0.5s forwards 3; (Sıralamanın önemi yok sn'ler hariç 1.si her zaman duration 2.si delay time)
+    
+    */
+
+}
+
+.box-2 {
+
+    width: 20rem;
+    height: 20rem;
+    background-color: blueviolet;
+    animation: upCase 4s ease-in-out 2s 4 forwards;
+
+
+}
+
+@keyframes upCase {
+
+    0% {
+
+        transform: translateY(0);
+        background-color: brown;
+
+    }
+
+    100% {
+
+        transform: translateY(100px);
+        rotate: 75deg;
+        background-color: rgb(171, 111, 33);
+        scale: 0.5;
+    }
+
+
+}
