@@ -40,10 +40,10 @@
     background-color: rgba(49, 205, 205, 0.5);
     animation-name: slideToright;  /*  Animasyon adı*/
     animation-duration: 4s;  /* Animasyon süresi */
-    animation-timing-function: ease-in-out; /* Bazı hareketlerin zamanlamasını sağlar.Yavaş hızlı yavaş,yavaş hızlı gibi  */
+    animation-timing-function: ease-in; /* Hareketlerin zamanlama biçimini sağlar.Yavaş hızlı yavaş,yavaş hızlı gibi  */
     animation-delay: 1s; /* animasyon gecikme süresi */
     animation-direction: normal;  /* animasyonun gideceği yön normal-reverse */
-    animation-fill-mode: forwards;  /* Animasyonun son noktasında durmasını sağlar */
+    animation-fill-mode: forwards;  /* Forwards Animasyonun son noktasında durmasını sağlar */
     animation-iteration-count: infinite; /* animasyon Tekrar sayısı  */
 
     /* Animasyon şu şekilde de yazılabilr;

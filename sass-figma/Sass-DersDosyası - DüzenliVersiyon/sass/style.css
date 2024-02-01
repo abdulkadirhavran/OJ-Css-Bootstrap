@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #page-home header .btn {
   display: inline-block;
   padding: 10px;
@@ -23,10 +24,12 @@
   margin-top: 40px;
 }
 
+/* Home ve About ta bulunan özellikleri göndermeyi sağlayan etiket forward */
 #page-about button {
   font-size: 50px;
 }
 
+/* use etiketi diğer klasörde ki scss dosyalarını kullanmamızı sağlıyor. */
 a {
   color: #a2d2ff;
 }
@@ -35,10 +38,11 @@ button {
   background-color: #a2d2ff;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/    
    v2.0-modified | 20110126
    License: none (public domain)
 */
+/* Reset default css özelliklerini sıfırlayıp bizim istediğimiz ayarların geçerli kılınmasını sağlayan kod dizinidr. Nette hazır bulunur. */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -382,6 +386,7 @@ h2 {
   color: #ffafcc;
 }
 
+/* .. demek üst klasöre çık oradan ilgili klasöre giderek özellikleri kullan demek * ise değişkenler önüne adres vermemek için getirilir.kısaltmadır. */
 .alert, .alert-primary, .alert-warning, .alert-success {
   font-size: 1.5rem;
   border: 2px solid #000;
