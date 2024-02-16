@@ -25,18 +25,18 @@ p::first-line { /* İlk satırda oluşan değişimler */
     
 }
 
-#webtech li::before {
+#webtech li::before { /* Before pseudo class'ı verilen element/(Çoğulda olabilirler) önüne content getirmeye yarar.*/
 
     content: "a : ";  /* before özelliğini kullanabilmek için mutlaka CONTENT özelliği olmalı aksi taktirde çalışmaz */
     display: inline-block;
-    width: 20px;
+    width: 25px;
     height: auto;
     background-color: blueviolet;
 
 
 }
 
-#webtech li::after {
+#webtech li::after { /* After pseudo class'ı verilen element/(Çoğulda olabilirler) ARKASINA content getirmeye yarar.*/
 
     content: "b";  /* after özelliğini kullanabilmek için mutlaka CONTENT özelliği olmalı(Dolu-Boş) aksi taktirde çalışmaz */
     display: inline-block;
