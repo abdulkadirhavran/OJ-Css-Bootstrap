@@ -2,7 +2,7 @@
 /*  PSEUDO CLASSLAR : BELİRTTİĞİMİZ DURUMLARDA ELEMENTİ DEĞİŞTİRİYOR.
          PSEUDO ELEMENTLER : YENİ ELEMENT EKLEMİŞ GiBİ DAVRANIR  */
 
-p::first-letter { /* paragrafta İlk harf değişimi */
+p::first-letter { /* paragrafta İlk harf değişimini ifade eder */
 
     font-size: 2rem;
     color: red;
@@ -10,7 +10,7 @@ p::first-letter { /* paragrafta İlk harf değişimi */
 
 }
 
-p::first-line { /* İlk satırda oluşan değişimler */
+p::first-line { /* İlk satırda oluşan değişimleri ifade eder */
 
     color: brown;
     font-size: 24px;
@@ -25,7 +25,7 @@ p::first-line { /* İlk satırda oluşan değişimler */
     
 }
 
-#webtech li::before { /* Before pseudo class'ı verilen element/(Çoğulda olabilirler) önüne content getirmeye yarar.*/
+#webtech li::before { /* Before pseudo class'ı verilen element/(Çoğulda olabilirler) ÖNÜNE content getirmeye yarar.*/
 
     content: "a : ";  /* before özelliğini kullanabilmek için mutlaka CONTENT özelliği olmalı aksi taktirde çalışmaz */
     display: inline-block;
@@ -63,7 +63,7 @@ p::first-line { /* İlk satırda oluşan değişimler */
 
 p::selection{  /* Paragrafı mouse ile seçtiğimiz zaman arka plan rengini değiştirmeyi sağlıyor. */
     
-    background-color: chartreuse;
+    background-color: rgb(161, 179, 143);
     color: white;
 
 

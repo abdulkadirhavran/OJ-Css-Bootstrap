@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Combinator-Birleştiriciler</title>
     <style>
-          /* css'teki inheritence özelliğinin işimizi bozmaması için 
+      /* css'teki inheritence özelliğinin işimizi bozmaması için 
       li'lere color: ... tanımlaması yapıyoruz */
       li {
         color: black;
@@ -18,8 +18,12 @@
       /* .summary > li {
         color: red;
       } */
-
-      h1, #chocolate ~ li { /* id si chocolate olan element sonrasında ki BÜTÜN kardeşler seçilir. */
+      h1 {
+        margin-left: 25px;
+      }
+      h1,
+      #chocolate ~ li {
+        /* id si chocolate olan element sonrasında ki BÜTÜN kardeşler seçilir. */
         color: red;
       }
 
@@ -27,29 +31,38 @@
         color: red;
       } */
 
-/*       #chocolate, #chocolate + li { (id si chocolate olan elementi VE bi alt kardeşini seç demek oluyor)
+      /*       #chocolate, #chocolate + li { (id si chocolate olan elementi VE bi alt kardeşini seç demek oluyor)
                                     (, = VE demek)
         color: red;
       } */
-            
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Combinators</h1>
     <!-- Css'de kullanılan selectorleri(p,h,.class,# exc.) birbirine bağlamamıza birleştirmemize yarar. -->
     <br />
     <br />
     <ul class="summary">
-        <li>Combinator'lar 2 selector (seçici) arasındaki ilişkiyi tanımlar</li>
-        <li id="combinator-list">Toplam 4 adet combinator vardır
-            <ul>
-                <li>Descendant(soy) combinator ----&gt;(<code> </code>)</li>
-                <li id="chocolate">Child (çocuk) combinator’ı ---&gt; (<code>&gt;</code>)</li> <!-- sadece bi alt nesli seçilir diğerleri seçilmez(Ancak inherit özellikler verilirse torunlara kadar gider.) -->
-                <li> General sibling (genel kardeş) combinator’ı ---&gt; (<code>~</code>)</li> <!-- Seçili Elementten sonra gelen kardeşler(Eşdeğer olanlar) elementlere ilgili özellik aktarılır. -->
-                <li> Adjacent sibling (sonraki kardeş) combinator’ı ---&gt;  <!-- Seçili elementten hemen sonra gelen(Sadece o element) element'e özellik aktarılır. -->
-                    (<code>+</code>)</li>
-            </ul>
-        </li>
+      <li>Combinator'lar 2 selector (seçici) arasındaki ilişkiyi tanımlar</li>
+      <li id="combinator-list">
+        Toplam 4 adet combinator vardır
+        <ul>
+          <li>Descendant(soy) combinator ----&gt;(<code> </code>)</li>
+          <li id="chocolate">
+            Child (çocuk) combinator’ı ---&gt; (<code>&gt;</code>)
+          </li>
+          <!-- sadece bi alt nesli seçilir diğerleri seçilmez(Ancak inherit özellikler verilirse torunlara kadar gider.) -->
+          <li>
+            General sibling (genel kardeş) combinator’ı ---&gt; (<code>~</code>)
+          </li>
+          <!-- Seçili Elementten sonra gelen kardeşler(Eşdeğer olanlar) elementlere ilgili özellik aktarılır. -->
+          <li>
+            Adjacent sibling (sonraki kardeş) combinator’ı ---&gt;
+            <!-- Seçili elementten hemen sonra gelen(Sadece o element) element'e özellik aktarılır. -->
+            (<code>+</code>)
+          </li>
+        </ul>
+      </li>
     </ul>
-</body>
+  </body>
 </html>

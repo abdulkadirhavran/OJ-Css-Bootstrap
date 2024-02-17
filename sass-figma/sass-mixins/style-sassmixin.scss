@@ -1,11 +1,11 @@
-$color-primary: #A2D2FF;
+$color-primary: #A2D2FF;  /* Değişken tanımlama  */
 $color-secondary: #FFAFCC;
 $spacing: 10px;
 $border-width: 2px;
 $border-radius: 8px;
 
-
-@mixin square($size, $color: #ff00ff, $border-width: 5px) { /* Burada parantez içine parametre isimleri verilerek bu özellikler kullanılacağı yerde istenebilir.Veya default olarak yazılarak mixin'de tanımlanabilir. */
+/* Mixin kullanımı */
+@mixin square($size, $color: #ff00ff, $border-width: 5px) { /* Burada parantez içine parametre isimleri verilerek bu özellikler kullanıcı tarafından istenebilir.Veya default olarak yazılarak mixin'de tanımlanabilir. */
     width: $size;
     height: $size;
     background-color: $color;
