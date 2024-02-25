@@ -28,7 +28,7 @@ body {
 
 .item-6 {
 
-    position: fixed; /* seçili elementin sayfa boyu aşağı yukarı kaymasını sağlar. */
+    position: fixed; /* seçili elementin sayfa boyu olduğu yerde sabit kalmasını sağlar. */
     top: 0;
     left: 0;
     border-radius: 0;

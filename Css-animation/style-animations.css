@@ -1,4 +1,4 @@
-@keyframes slideToright { /* Animasyon için keyframes anahtar kelimesine ihtiyaç var sonra animasyon adı gelir. */
+@keyframes slideToright { /* Animasyon için keyframes anahtar kelimesine ihtiyaç var sonra animasyon adı(slidetoright gibi) gelir. */
 
     0%  { /* From */                        /* Nereden ve hangi boyutta transform başlaycak */
 
@@ -46,7 +46,9 @@
     animation-fill-mode: forwards;  /* Forwards Animasyonun son noktasında durmasını sağlar */
     animation-iteration-count: infinite; /* animasyon Tekrar sayısı  */
 
+
     /* Animasyon şu şekilde de yazılabilr;
+
     
         animation: slideToright 2s ease-in 0.5s forwards 3; (Sıralamanın önemi yok sn'ler hariç 1.si her zaman duration 2.si delay time)
     
@@ -80,6 +82,22 @@
         background-color: rgb(171, 111, 33);
         scale: 0.5;
     }
+
+
+}
+
+
+h2 {
+    display: flex;
+    justify-content: center;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
 
 
 }
